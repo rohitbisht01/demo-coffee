@@ -1,0 +1,663 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!--Import Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d6a8ce8d77.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/script.js"></script>
+    <title>Coffee Cafe</title>
+</head>
+
+<ection>
+    <!-- Navigation bar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-brown">
+            <span class="branding w3-bar-item w3-mobile">Coffee Cafe</span>
+            <span class="w3-right w3-mobile">
+      <a class="w3-bar-item w3-button w3-mobile" href="#">Home</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="#about">About</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="#coffee">Our Coffee</a>
+      <a class="w3-bar-item w3-button w3-mobile" href="#contact">Contact</a>
+    </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="w3-container w3-center">
+        <h1 class="w3-text-shadow w3-animate-opacity">Coffee Cafe</h1>
+        <hr class="w3-animate-opacity">
+        <p class="w3-animate-opacity">Never trust anyone who doesn't drink coffee. Our culture runs on coffee and gasoline, the first often tasting like the second. Science may never come up with a better office communication system than the coffee break. The smell of fresh-made coffee is one of the world's greatest inventions</p>
+       
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="section w3-brown w3-hover-opacity">
+      <div class="w3-container w3-center">
+        <i class="material-icons md-36">home</i>
+        <h2>A relaxing environment</h2>
+        <p>Cafes bring back old memories.
+          <br>
+          Slow down and enjoy your coffee.
+          <br>
+          Happiness is a small cozy cafe.
+          </p>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section w3-grey w3-hover-opacity">
+      <div class="w3-container w3-center">
+        <i class="material-icons md-36">build</i>
+        <h2>A variety of ingredients</h2>
+        <ul>
+          <li>Caffeine</li>
+         <li>Tannin</li>
+          <li>hiamin</li>
+         <li>Xanthine</li>
+          <li>Spermidine</li>
+          <li>Citric Acid</li>
+          <li>Chlorogenic acid</li>
+          <li>Acetaldehyde</li>
+          <li>Spermine</li>
+
+          </ul>
+      </div>
+    </section>
+
+    <section class="section">
+    <div class="row" id="menu" style="padding-left: 50px; padding-right: 50px">
+      <h2 class="header center">Coffee Menu</h2>
+      <div class="col s12 m6 l4" style="padding: 30px 5px">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://cdn.pixabay.com/photo/2017/08/07/01/16/black-2598314_1280.jpg"
+            />
+          </div>
+          <div class="card-content">
+            <span
+              class="card-title activator grey-text text-darken-4"
+              style="font-weight: 500"
+              >Americano<i class="material-icons right">more_vert</i></span
+            >
+          </div>
+          <div class="card-reveal">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 2rem; font-weight: 500"
+              >Americano<i class="material-icons right">close</i></span
+            >
+            <p>
+              An Americano is two to three rich, dark espresso shots topped off
+              with steaming-hot water. This drink is 15 calories and has zero
+              sugar.
+            </p>
+            <p class="center flow-text">
+              Hot :- Rs 10 <br />
+              Iced :- Rs 15
+            </p>
+            <button type="button" class="btn btn-primary w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4" style="padding: 30px 5px">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://cdn.pixabay.com/photo/2018/11/27/19/36/coffee-3842200_1280.jpg"
+            />
+          </div>
+          <div class="card-content">
+            <span
+              class="card-title activator grey-text text-darken-4"
+              style="font-weight: 500"
+              >Cappuccino<i class="material-icons right">more_vert</i></span
+            >
+          </div>
+          <div class="card-reveal">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 2rem; font-weight: 500"
+              >Cappuccino<i class="material-icons right">close</i></span
+            >
+            <p>
+              Outside of Italy, cappuccino is a coffee drink that today is
+              typically composed of a single espresso shot and hot milk, with
+              the surface topped with foamed milk. Cappuccinos are most often
+              prepared with an espresso machine.
+            </p>
+            <p class="center flow-text">
+              Hot :- Rs 25 <br />
+              Iced :- Rs 30 <br />
+              Blended :- Rs 40
+            </p>
+            <button type="button" class="btn btn-primary w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4" style="padding: 30px 5px">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://cdn.pixabay.com/photo/2017/04/19/13/11/coffee-2242247_1280.jpg"
+            />
+          </div>
+          <div class="card-content">
+            <span
+              class="card-title activator grey-text text-darken-4"
+              style="font-weight: 500"
+              >Fresh Latte<i class="material-icons right">more_vert</i></span
+            >
+          </div>
+          <div class="card-reveal">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 2rem; font-weight: 500"
+              >Fresh Latte<i class="material-icons right">close</i></span
+            >
+            <p>
+              Drink it in any flavor, lattes are known for decreasing the risk
+              of type 2 diabetes. A cup of latte in moderation helps in
+              preventing cardiovascular disorders and aid in burning fat
+            </p>
+            <p class="center flow-text">
+              Hot :- Rs 40 <br />
+              </p>
+            <button type="button" class="btn btn-primary w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="section ">
+          <div class="row" style="padding-left: 50px; padding-right: 50px">
+      <div class="col s12 m6 l4" style="padding: 30px 5px">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://cdn.pixabay.com/photo/2015/06/25/16/51/coffee-821490_1280.jpg"
+            />
+          </div>
+          <div class="card-content">
+            <span
+              class="card-title activator grey-text text-darken-4"
+              style="font-weight: 500"
+              >Mocha<i class="material-icons right">more_vert</i></span
+            >
+          </div>
+          <div class="card-reveal">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 2rem; font-weight: 500"
+              >Mocha<i class="material-icons right">close</i></span
+            >
+            <p>
+              caffè mocha is based on espresso and hot milk but with added
+              chocolate flavouring and sweetener, typically in the form of cocoa
+              powder and sugar. Many varieties use chocolate syrup instead, and
+              some may contain dark or milk chocolate.
+            </p>
+            <p id="hot" class="center flow-text">
+              Hot :- Rs 30 <br />
+             
+            </p>
+            <button type="button" class="btn btn-primary w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4" style="padding: 30px 5px">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://media.istockphoto.com/photos/espresso-coffee-and-machine-picture-id1030882758?k=20&m=1030882758&s=612x612&w=0&h=koH9T_nNKF30gZHxYTid5u4otD3qxRg0fg2cf7Rj48M="
+            />
+          </div>
+          <div class="card-content">
+            <span
+              class="card-title activator grey-text text-darken-4"
+              style="font-weight: 500"
+              >Expresso<i class="material-icons right">more_vert</i></span
+            >
+          </div>
+          <div class="card-reveal">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 2rem; font-weight: 500"
+              >Expresso<i class="material-icons right">close</i></span
+            >
+            <p>
+              espresso is roasted, ground, and brewed differently, it has a
+              unique flavor compared to drip coffee. It usually has a bolder,
+              less acidic taste, with a well-rounded and full-bodied finish. It
+              tastes “stronger,” meaning that it has a rich coffee flavor.
+            </p>
+            <p class="center flow-text">
+              Hot :- Rs 20 <br />
+              Iced :- Rs 25
+            </p>
+            <button type="button" class="btn btn-primary w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4" style="padding: 30px 5px">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://cdn.pixabay.com/photo/2019/07/13/11/44/coffee-4334647_1280.jpg"
+            />
+          </div>
+          <div class="card-content">
+            <span
+              class="card-title activator grey-text text-darken-4"
+              style="font-weight: 500"
+              >Double Shot Expresso<i class="material-icons right"
+                >more_vert</i
+              ></span
+            >
+          </div>
+          <div class="card-reveal">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 2rem; font-weight: 500"
+              >Double Shot Expresso<i class="material-icons right"
+                >close</i
+              ></span
+            >
+            <p>
+              A double shot uses 14g of coffee and produces around 60ml of
+              espresso (about 2 liquid ounces). Double shots are now the
+              standard in America and many places around the world.
+            </p>
+            <p class="center flow-text">
+              Hot :- Rs 20 <br />
+              Iced :- Rs 20
+            </p>
+            <button type="button" class="btn btn-primary w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax">
+        <img
+          src="https://cdn.pixabay.com/photo/2019/02/04/17/20/cafeteria-3975175_1280.jpg"
+        />
+      </div>
+    </div>
+    <div class="row" style="padding-left: 50px; padding-right: 50px">
+      <h2 class="header center">Tea Menu</h2>
+      <div class="col s12 m6 l4" style="padding: 30px 5px">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://media.istockphoto.com/photos/indian-masala-chai-tea-picture-id614533094?s=2048x2048"
+            />
+          </div>
+          <div class="card-content">
+            <span
+              class="card-title activator grey-text text-darken-4"
+              style="font-weight: 500"
+              >Masala Tea<i class="material-icons right">more_vert</i></span
+            >
+          </div>
+          <div class="card-reveal">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 2rem; font-weight: 500"
+              >Masala Tea<i class="material-icons right">close</i></span
+            >
+            <p>
+              Masala chai tea offers a sensory pleasure that makes drinking this
+              tea feel like an extraordinary break from routine. Ginger adds a
+              kick to taste buds while the soothingly sweet notes of cinnamon
+              add a full-bodied flavor. The heat of peppery spices are tempered
+              by creamy milk and the infusion of strong black tea.
+            </p>
+            <p class="center flow-text">
+              Hot :- Rs 10 <br />
+              
+            </p>
+            <button type="button" class="btn btn-primary w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4" style="padding: 30px 5px">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="data:image/jpeg;base64,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"
+            />
+          </div>
+          <div class="card-content">
+            <span
+              class="card-title activator grey-text text-darken-4"
+              style="font-weight: 500"
+              >Kullad Wali Chai<i class="material-icons right">more_vert</i></span
+            >
+          </div>
+          <div class="card-reveal">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 2rem; font-weight: 500"
+              >Kullad Wali Chai<i class="material-icons right">close</i></span
+            >
+            <p>
+              चाय की बात करे तो हिंदुस्तान सबसे खास पेय (drink) में से एक है और उसमे से भी सबसे खास शान ‘ऐ हिंदुस्तान कुल्लड़ (Kullad) वाली चाय (Kullad tea/Kullad chai) और इस शान की वजह कई है सबसे खास और गर्व की वजह की यह चाय हिंदुस्तान की मिट्टी से जुडी हुई है
+            </p>
+            <p class="center flow-text">
+              Hot :- Rs 15 <br />
+              
+            </p>
+            <button type="button" class="btn btn-primary w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4" style="padding: 30px 5px">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img
+              class="activator"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRifIzlKOpPB-ABI8gxtSiGGeULKKksfLfvg&usqp=CAU"
+            />
+          </div>
+          <div class="card-content">
+            <span
+              class="card-title activator grey-text text-darken-4"
+              style="font-weight: 500"
+              >Green Tea<i class="material-icons right">more_vert</i></span
+            >
+          </div>
+          <div class="card-reveal">
+            <span
+              class="card-title grey-text text-darken-4"
+              style="font-size: 2rem; font-weight: 500"
+              >Green Tea<i class="material-icons right">close</i></span
+            >
+            <p>
+              Green tea is not just healthy but refreshing too! Some loose green teas are scented with flowers or mixed with fruits to create aromatic or flavoured teas. Straight green tea has a clean taste and can uplift moods instantly. Known as the healthiest beverage on the planet, green tea is loaded with antioxidants and nutrients that have powerful effects on the body.
+            </p>
+            <p class="center flow-text">
+              Hot :- Rs 20 <br />
+            </p>
+            <button type="button" class="btn btn-primary w3-button w3-brown w3-large w3-animate-opacity" onclick="openModal()">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="w3-container">
+        <div class="w3-row-padding">
+          <div class="w3-col m5">
+            <img src="./img/beans.jpg" alt="coffee beans">
+          </div>
+          <div class="w3-col m7">
+            <button onclick="accordionFunction('whatWeDo')" class="w3-btn w3-block w3-brown w3-center-align accordion">What We Do</button>
+            <div id="whatWeDo" class="w3-container w3-show">
+              <p>The best coffee makers in town</p>
+              
+            </div>
+            <button onclick="accordionFunction('whoWeAre')" class="w3-btn w3-block w3-brown w3-center-align accordion">Who We Are</button>
+            
+            <div id="whoWeAre" class="w3-container w3-hide">
+              <p>We're a bunch of friendly dudes with a passion for coffee</p>
+             
+            </div>
+            <button onclick="accordionFunction('Demo1')" class="w3-btn w3-block w3-brown w3-center-align accordion">Where Can You Find Us</button>
+            
+
+            <div id="Demo1" class="w3-container w3-hide">
+              <!-- <p>We are mainly located in Bhimtal, Nainital, Uttarakhand</h4> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13909.91917834611!2d79.5540858!3d29.3562377!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa08407c1dac1f3ac!2sBirla%20Institute%20of%20Applied%20Sciences%2C%20Bhimtal-263136%20(Uttarakhand)!5e0!3m2!1sen!2sin!4v1649257659191!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coffee Section Heading-->
+    <section id="coffee" class="section w3-brown">
+      <div class="w3-container w3-center">
+        <h2 class="w3-text-shadow">Our Special's</h2>
+        <ul>
+        <li><b>
+          MASALA TEA
+        </b></li>
+        <li><b>ESPRESSO</b></li>
+        <li><b>CAPUCCINO</b></li>
+      </div>
+    </section>
+
+    <!-- Coffee Section Features-->
+    <section class="section w3-grey">
+      <div class="w3-container w3-center">
+        <div class="w3-row">
+          <div class="w3-col m3">
+            <i class="material-icons md-24">blur_on</i>
+              <h4>The best coffee beans from around the world.</h4>
+          </div>
+          <div class="w3-col m3">
+            <i class="material-icons md-24">local_dining</i>
+              <h4>Delicious food available to complement your beverage.</h4>
+          </div>
+          <div class="w3-col m3">
+            <i class="material-icons md-24">place</i>
+              <h4>Located at convenient locations around the city.</h4>
+          </div>
+          <div class="w3-col m3">
+            <i class="material-icons md-24">sentiment_very_satisfied</i>
+              <h4>We only hire the best to give you a great experience.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Heading-->
+    <section id="contact" class="section w3-white">
+      <div class="w3-container w3-center">
+        <h2 class="w3-text-shadow">Get in touch</h2>
+      </div>
+    </section>
+
+
+     <section class="section w3-white">
+      <div class="w3-container">
+        <div class="w3-card-2">
+          <div class="w3-container w3-brown">
+            <h2>Contact Us</h2>
+          </div>
+          <form class="w3-container w3-padding-large">
+            <label class="w3-text-brown"><b>Coffee Cafe Team</b></label>
+            <!-- <input class="w3-input w3-border w3-round" type="text"> -->
+            <br>
+            <br>
+            <i class="fa fa-envelope icon"></i>
+            <label class="w3-text-brown"><b>Email</b><br><a href=mailto:<bhuveshpant>varunbisht209@gmail.com</a></label>
+            
+            <!-- <input class="w3-input w3-border w3-round" type="text"> -->
+          <br>
+          <br>
+          <i class='fa fa-phone icon'></i>
+          <label class="w3-text-brown"><b>Phone no</b>
+            <br>
+            1234567895
+            <br>
+          </label>
+          <br>
+          <a href="tel:9411775243">Call Us</a>
+            <!-- <label class="w3-text-brown"><b>Message</b></label> -->
+            <!-- <textarea class="w3-input w3-border w3-round" style="resize:none"></textarea> -->
+           
+            <!-- <button type="submit" class="w3-btn w3-brown">Submit</button> -->
+            
+
+          </form>
+        </div>
+      </div>
+    </section>
+<!--
+    <div class="contact-info-container">
+
+      <div class="contact__info">
+        <div class="box">
+          <i class='fa fa-phone icon'></i>
+          <h2>Phone</h2>
+          <p>9411775243</p>
+          <a href="tel:9411775243">Call Now</a>
+       </div>
+ 
+       <div class="box">
+          <i class="fa fa-envelope icon"></i>
+          <h2>Email</h2>
+          <p>bhuveshpant@gmail.com</p>
+       </div>
+      </div>
+
+      <div class="contact__address">
+        
+        <div class="box">
+         
+          <h2>Address</h2>
+          <p> <b>BHIMTAL,INDIA -263136</b></p>
+        </div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13909.91917834611!2d79.5540858!3d29.3562377!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa08407c1dac1f3ac!2sBirla%20Institute%20of%20Applied%20Sciences%2C%20Bhimtal-263136%20(Uttarakhand)!5e0!3m2!1sen!2sin!4v1649257659191!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+        </div>
+      </div>
+    </div>
+-->
+
+
+    <!-- Modal/Popup -->
+     <div id="modal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-round">
+        <header class="w3-container w3-brown">
+          <span onclick="document.getElementById('modal').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+            <h2>Create Order</h2>
+            </header>
+            <form class="w3-container w3-padding-large">
+                <label id="name" class="w3-text-brown"><b>Name</b></label>
+                <input class="w3-input w3-border w3-round" type="text">
+                <br>
+                <!-- <label id="beverage" class="w3-text-brown"><b>Beverage</b></label>
+                <input class="w3-input w3-border w3-round" type="text"> -->
+                <!-- <form action="">
+                  <label for="coffee">Choose your beverage:</label> -->
+                  <!-- <div class="wrap"> -->
+                    <!-- Begin Multiple Dropdown -->
+                    <!-- <form class="form" id="foo_form">
+                      <label for="foo_select" class="screen-reader-text">Select your beverges</label>
+                      <select id="foo_select" class="dropdown" form="foo_form" multiple data-placeholder="Click to select an option...">
+                        <option value="null">Americano</option>
+                        <option value="null">Fresh Latte</option>
+                        <option value="null">Espresso</option>
+                        <option value="null">Kullad wali chai</option>
+                        <option value="null">Green Tea</option>
+                      </select>
+                    </form> -->
+                    <!-- End Multiple Dropdown -->
+                  
+                  <!-- </div>.wrap -->
+                  <!-- <select id="coffee" name="coffee">
+                    <option value="">Americano</option>
+                   <option value="">Fresh Latte</option>
+                <option value="">Espresso</option>
+                <option value="">Masala Tea</option>
+                <option value="">Kullad wali chai</option>
+                <option value="">Green Tea</option>
+                  </select> -->
+            </form>
+                
+                <br>
+                <button class="w3-block w3-section-padding w3-brown">Submit Order</button>
+            </form>
+        </div>
+    </div>
+    
+
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+    
+    <script src="https://use.fontawesome.com/98261df5d3.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        var Name=$('#name').val();
+        var Beverage=$('#beverage').val();
+        var Body='name: '+Name+'<br>beverage: '+Beverage;
+      }
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "pantbhuvesh6@gmail.com",
+    Password : "BHUVESHPANT@1234",
+    To : 'bhuveshpant@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact form Enquiry",
+    Body : "Name:"+document.getElementById("name").value+"<br> Beverage:"+document.getElementById("beverage").value
+
+}).then(
+  message => alert("message sent successfully")
+);
+      
+    </script>  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".modal").modal();
+        $(".sidenav").sidenav();
+        $(".parallax").parallax();
+        $(".myreviews").carousel({
+          numVisible: 7,
+          shift: 55,
+          padding: 55,
+        });
+        $(".slider").slider({ full_width: true });
+      });
+    </script>
+
+</body>
+
+</html>

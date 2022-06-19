@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+body {
+  font-family: "Merriweather", serif;
+}
+
+button {
+  border-radius: 3px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.w3-bar {
+  box-shadow: 0px 0px 5px black;
+}
+
+.box > .icon {
+  font-size: 50px;
+}
+
+.branding {
+  font-family: "Coustard", serif;
+}
+
+.showcase {
+  background: url("../img/cup.jpg") no-repeat center;
+  background-size: 100%;
+  background-color: grey;
+  height: 600px;
+  padding: 140px 100px;
+  color: #fff;
+}
+
+.showcase h1 {
+  font-size: 45px;
+  font-family: "Coustard", serif;
+  text-transform: uppercase;
+}
+
+.showcase hr {
+  width: 100px;
+  margin: auto;
+  border-width: 3px;
+}
+
+.showcase p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.contact-info-container {
+  display: flex;
+}
+.contact__info {
+  width: 50%;
+  padding: 60px;
+}
+
+.section {
+  padding: 40px 0;
+  transition-duration: 0.4s;
+}
+
+.section h2 {
+  font-family: "Coustard", serif;
+}
+
+.section h3 {
+  font-family: "Roboto Slab", serif;
+}
+
+.section .material-icons {
+  font-size: 45px;
+}
+
+.section img {
+  width: 100%;
+}
+
+.accordion {
+  transition-duration: 0.4s;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.footer {
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  text-align: center;
+}
+
+.contact-info-container {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(121, 85, 72) !important;
+}
+
+.form .chosen-container {
+  font-size: rem(16);
+}
+.form .chosen-container .chosen-single,
+.form .chosen-container .chosen-drop {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form .chosen-container-active.chosen-with-drop .chosen-single,
+.form .chosen-container-active .chosen-choices {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form .chosen-container-active .chosen-results .highlighted {
+  background: "blue";
+}
+
+@media only screen and (max-width: 975px) {
+  .showcase {
+    height: 550px;
+    background-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .showcase {
+    height: 475px;
+    background-size: 150%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: 190px;
+  }
+  .showcase {
+    height: 400px;
+    padding: 60px 0;
+    background-size: 150%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    margin-top: 190px;
+  }
+  .showcase {
+    height: 300px;
+    padding: 60px 0;
+    background-size: 175%;
+  }
+  .showcase h1 {
+    font-size: 30px;
+  }
+  .showcase p {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+}
